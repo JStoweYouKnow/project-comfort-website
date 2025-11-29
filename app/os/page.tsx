@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function OSPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[var(--pc-cream)]">
       <Container size="lg">
         <div className="py-20 md:py-32">
           <SectionHeader
@@ -15,7 +15,7 @@ export default function OSPage() {
           />
 
           <div className="prose prose-lg max-w-none mb-16">
-            <p className="text-muted-foreground leading-relaxed text-lg">
+            <p className="text-[var(--pc-navy)]/80 leading-relaxed text-lg">
               We believe comfort is an asset — not a luxury. The Project Comfort OS
               is a framework for designing spaces, systems, food, style, and movement
               that create more freedom, clarity, and reliable creative output.
@@ -27,34 +27,34 @@ export default function OSPage() {
               <Link
                 key={pillar.slug}
                 href={`/${pillar.slug}`}
-                className="group rounded-lg border border-border bg-background p-6 transition-all hover:shadow-md hover:border-foreground/20"
+                className="group rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-6 transition-all hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-[var(--pc-olive)]/30"
               >
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-foreground/80 transition-colors">
+                <h3 className="text-xl font-semibold mb-2 text-[var(--pc-navy)] group-hover:text-[var(--pc-olive)] transition-colors">
                   {pillar.name}
                 </h3>
-                <p className="text-sm text-muted-foreground">{pillar.description}</p>
+                <p className="text-sm text-[var(--pc-navy)]/70">{pillar.description}</p>
               </Link>
             ))}
           </div>
 
-          <div className="rounded-lg border border-border bg-muted/30 p-8">
-            <h2 className="text-2xl font-semibold mb-4">How It Works</h2>
-            <p className="text-muted-foreground mb-6">
+          <div className="rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-8 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+            <h2 className="text-[32px] font-semibold mb-4 text-[var(--pc-navy)]">How It Works</h2>
+            <p className="text-[var(--pc-navy)]/80 mb-6">
               Each pillar represents a core domain where we remove friction and build
               systems that scale. Together, they create the foundation for a life that
               feels lighter and performs better.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               <div>
-                <h3 className="font-semibold mb-2">Systems Over Hustle</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold mb-2 text-[var(--pc-navy)]">Systems Over Hustle</h3>
+                <p className="text-sm text-[var(--pc-navy)]/70">
                   Build once, optimize continuously. Automation and smart design replace
                   repetitive work.
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold mb-2">Comfort as Performance</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="font-semibold mb-2 text-[var(--pc-navy)]">Comfort as Performance</h3>
+                <p className="text-sm text-[var(--pc-navy)]/70">
                   When your environment supports you, you create better work with less
                   stress.
                 </p>

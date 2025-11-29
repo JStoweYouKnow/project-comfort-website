@@ -11,10 +11,10 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-[var(--pc-stone)] bg-[var(--pc-cream)]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--pc-cream)]/60">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-semibold tracking-tight">
+          <Link href="/" className="text-xl font-semibold tracking-tight text-[var(--pc-navy)]">
             Project Comfort
           </Link>
           <nav className="flex items-center gap-6">
@@ -22,7 +22,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-medium text-[var(--pc-navy)]/70 transition-colors hover:text-[var(--pc-navy)]"
               >
                 {link.label}
               </Link>

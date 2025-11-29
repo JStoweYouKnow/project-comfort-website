@@ -6,7 +6,7 @@ import { APPS } from "@/lib/apps";
 
 export default function AppSuiteGrid() {
   return (
-    <section className="py-20 md:py-32 bg-muted/30">
+    <section className="py-20 md:py-32 bg-[var(--pc-white)]">
       <Container size="lg">
         <SectionHeader
           title="The Comfort App Suite"
@@ -18,18 +18,18 @@ export default function AppSuiteGrid() {
             <AppLink
               key={app.id}
               app={app}
-              className="group relative rounded-xl border border-border bg-background p-8 transition-all hover:shadow-lg hover:border-foreground/20 block"
+              className="group relative rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-8 transition-all hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-[var(--pc-olive)]/30 block"
               showExternalIcon={app.isExternal}
             >
               <div className="flex flex-col h-full">
-                <h3 className="text-2xl font-semibold mb-2 group-hover:text-foreground/80 transition-colors">
+                <h3 className="text-2xl font-semibold mb-2 text-[var(--pc-navy)] group-hover:text-[var(--pc-olive)] transition-colors">
                   {app.name}
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4 font-medium">
+                <p className="text-sm text-[var(--pc-navy)]/70 mb-4 font-medium">
                   {app.tagline}
                 </p>
-                <p className="text-muted-foreground flex-grow">{app.description}</p>
-                <div className="mt-6 text-sm font-medium text-foreground group-hover:underline">
+                <p className="text-[var(--pc-navy)]/70 flex-grow">{app.description}</p>
+                <div className="mt-6 text-sm font-medium text-[var(--pc-navy)] group-hover:text-[var(--pc-olive)] transition-colors">
                   {app.isExternal ? "Launch app →" : "Learn more →"}
                 </div>
               </div>
@@ -39,7 +39,7 @@ export default function AppSuiteGrid() {
         <div className="mt-12 text-center">
           <Link
             href="/apps"
-            className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            className="inline-flex items-center text-sm font-medium text-[var(--pc-navy)]/70 hover:text-[var(--pc-navy)] transition-colors"
           >
             View all apps →
           </Link>

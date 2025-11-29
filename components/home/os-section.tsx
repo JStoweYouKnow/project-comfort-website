@@ -5,7 +5,7 @@ import { PILLARS } from "@/lib/constants";
 
 export default function OSSection() {
   return (
-    <section className="py-20 md:py-32 bg-background">
+    <section className="py-20 md:py-32 bg-[var(--pc-cream)]">
       <Container size="lg">
         <SectionHeader
           title="The Project Comfort OS"
@@ -17,19 +17,19 @@ export default function OSSection() {
             <Link
               key={pillar.slug}
               href={`/${pillar.slug}`}
-              className="group rounded-lg border border-border bg-background p-6 transition-all hover:shadow-md hover:border-foreground/20"
+              className="group rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-6 transition-all hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:border-[var(--pc-olive)]/30"
             >
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-foreground/80 transition-colors">
+              <h3 className="text-xl font-semibold mb-2 text-[var(--pc-navy)] group-hover:text-[var(--pc-olive)] transition-colors">
                 {pillar.name}
               </h3>
-              <p className="text-sm text-muted-foreground">{pillar.description}</p>
+              <p className="text-sm text-[var(--pc-navy)]/70">{pillar.description}</p>
             </Link>
           ))}
         </div>
         <div className="mt-12 text-center">
           <Link
             href="/os"
-            className="inline-flex items-center justify-center rounded-lg bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            className="inline-flex items-center justify-center rounded-xl bg-[var(--pc-olive)] text-[var(--pc-white)] px-6 py-3 text-sm font-medium transition-colors hover:bg-[var(--pc-navy)] shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
           >
             Explore the Operating System
           </Link>

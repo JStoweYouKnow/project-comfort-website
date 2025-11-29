@@ -16,38 +16,38 @@ export default async function AppPage({
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-[var(--pc-cream)]">
       <Container size="lg">
         <div className="py-20 md:py-32">
           <Link
             href="/apps"
-            className="text-sm text-muted-foreground hover:text-foreground mb-8 inline-block"
+            className="text-sm text-[var(--pc-navy)]/70 hover:text-[var(--pc-navy)] mb-8 inline-block transition-colors"
           >
             ← Back to App Suite
           </Link>
 
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+            <h1 className="text-[44px] md:text-[56px] font-bold tracking-tight mb-4 text-[var(--pc-navy)]">
               {app.name}
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">{app.tagline}</p>
+            <p className="text-xl text-[var(--pc-navy)]/80 mb-8">{app.tagline}</p>
 
             <div className="prose prose-lg max-w-none">
-              <p className="text-muted-foreground leading-relaxed text-lg mb-8">
+              <p className="text-[var(--pc-navy)]/80 leading-relaxed text-lg mb-8">
                 {app.description}
               </p>
 
               {app.externalUrl ? (
-                <div className="rounded-lg border border-border bg-muted/30 p-8 mt-12">
-                  <h2 className="text-2xl font-semibold mb-4">Launch {app.name}</h2>
-                  <p className="text-muted-foreground mb-6">
+                <div className="rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-8 mt-12 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+                  <h2 className="text-[32px] font-semibold mb-4 text-[var(--pc-navy)]">Launch {app.name}</h2>
+                  <p className="text-[var(--pc-navy)]/80 mb-6">
                     {app.name} is live and ready to use. Click below to launch the app.
                   </p>
                   <a
                     href={app.externalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-lg bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+                    className="inline-flex items-center justify-center rounded-xl bg-[var(--pc-olive)] text-[var(--pc-white)] px-6 py-3 text-sm font-medium transition-colors hover:bg-[var(--pc-navy)] shadow-[0_4px_20px_rgba(0,0,0,0.05)]"
                   >
                     Launch {app.name}
                     <svg
@@ -66,12 +66,12 @@ export default async function AppPage({
                   </a>
                 </div>
               ) : (
-                <div className="rounded-lg border border-border bg-muted/30 p-8 mt-12">
-                  <h2 className="text-2xl font-semibold mb-4">Coming Soon</h2>
-                  <p className="text-muted-foreground">
+                <div className="rounded-2xl border border-[var(--pc-stone)] bg-[var(--pc-white)] p-8 mt-12 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+                  <h2 className="text-[32px] font-semibold mb-4 text-[var(--pc-navy)]">Coming Soon</h2>
+                  <p className="text-[var(--pc-navy)]/80">
                     This app is currently in development. Check back soon for updates,
                     or{" "}
-                    <Link href="/work-with-me" className="underline">
+                    <Link href="/work-with-me" className="text-[var(--pc-olive)] underline hover:text-[var(--pc-navy)]">
                       get in touch
                     </Link>{" "}
                     to be notified when it launches.

@@ -11,11 +11,11 @@ export default function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <div className={`text-center ${className}`}>
-      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">
+      <h2 className="text-[32px] md:text-[44px] font-semibold tracking-tight text-[var(--pc-navy)]">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="mt-4 text-lg text-[var(--pc-navy)]/70 max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}
