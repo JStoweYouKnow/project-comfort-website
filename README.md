@@ -43,10 +43,10 @@ To link your other Vercel-hosted apps (Comfort Finder, Post Planner, Sous, Stylr
 
 2. **Add environment variables for each app:**
    ```
-   NEXT_PUBLIC_APP_COMFORT_FINDER_URL=https://your-comfort-finder-app.vercel.app
-   NEXT_PUBLIC_APP_POST_PLANNER_URL=https://your-post-planner-app.vercel.app
-   NEXT_PUBLIC_APP_SOUS_URL=https://your-sous-app.vercel.app
-   NEXT_PUBLIC_APP_STYLR_URL=https://your-stylr-app.vercel.app
+   NEXT_PUBLIC_APP_COMFORT_FINDER_URL=https://comfort-finder-analyzer.vercel.app/
+   NEXT_PUBLIC_APP_POST_PLANNER_URL=https://pjcpostplanner.vercel.app/
+   NEXT_PUBLIC_APP_SOUS_URL=https://ai-cooking-agent.vercel.app/
+   NEXT_PUBLIC_APP_STYLR_URL=https://stylr-one.vercel.app/
    ```
 
 3. **Redeploy** - After adding the variables, Vercel will automatically trigger a new deployment
