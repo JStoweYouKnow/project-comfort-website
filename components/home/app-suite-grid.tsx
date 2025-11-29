@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "@/components/shared/container";
 import SectionHeader from "@/components/shared/section-header";
+import AppLink from "@/components/shared/app-link";
 import { APPS } from "@/lib/apps";
 
 export default function AppSuiteGrid() {
@@ -14,10 +15,11 @@ export default function AppSuiteGrid() {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {APPS.map((app) => (
-            <Link
+            <AppLink
               key={app.id}
-              href={`/apps/${app.slug}`}
-              className="group relative rounded-xl border border-border bg-background p-8 transition-all hover:shadow-lg hover:border-foreground/20"
+              app={app}
+              className="group relative rounded-xl border border-border bg-background p-8 transition-all hover:shadow-lg hover:border-foreground/20 block"
+              showExternalIcon={app.isExternal}
             >
               <div className="flex flex-col h-full">
                 <h3 className="text-2xl font-semibold mb-2 group-hover:text-foreground/80 transition-colors">
@@ -28,10 +30,10 @@ export default function AppSuiteGrid() {
                 </p>
                 <p className="text-muted-foreground flex-grow">{app.description}</p>
                 <div className="mt-6 text-sm font-medium text-foreground group-hover:underline">
-                  Learn more →
+                  {app.isExternal ? "Launch app →" : "Learn more →"}
                 </div>
               </div>
-            </Link>
+            </AppLink>
           ))}
         </div>
         <div className="mt-12 text-center">

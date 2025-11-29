@@ -33,6 +33,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# project-comfort-website
-# project-comfort-website
+## Connecting Your Vercel-Hosted Apps
+
+To link your other Vercel-hosted apps (Comfort Finder, Post Planner, Sous, Stylr) to this site:
+
+1. **Go to your Vercel project settings**
+   - Navigate to your Project Comfort website project on Vercel
+   - Go to **Settings** → **Environment Variables**
+
+2. **Add environment variables for each app:**
+   ```
+   NEXT_PUBLIC_APP_COMFORT_FINDER_URL=https://your-comfort-finder-app.vercel.app
+   NEXT_PUBLIC_APP_POST_PLANNER_URL=https://your-post-planner-app.vercel.app
+   NEXT_PUBLIC_APP_SOUS_URL=https://your-sous-app.vercel.app
+   NEXT_PUBLIC_APP_STYLR_URL=https://your-stylr-app.vercel.app
+   ```
+
+3. **Redeploy** - After adding the variables, Vercel will automatically trigger a new deployment
+
+4. **Result** - Once deployed, app cards will:
+   - Link directly to your hosted apps (opens in new tab)
+   - Show "Launch app →" instead of "Learn more →"
+   - Display an external link icon
+   - App detail pages will show a "Launch" button
+
+**Note:** If an environment variable is not set, the app will continue to show the "Coming Soon" page with an internal link.
