@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/shared/container";
+import Logo from "@/components/shared/logo";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-lg font-semibold mb-4 text-[var(--pc-navy)]">Project Comfort</h3>
+              <Logo showText={true} className="mb-4" />
               <p className="text-sm text-[var(--pc-navy)]/70 max-w-md">
                 Design a life that feels lighter. Building comfort, energy, and freedom
                 across home, systems, food, style, and movement.

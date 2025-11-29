@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/shared/container";
+import Logo from "@/components/shared/logo";
 
 const navLinks = [
   { href: "/os", label: "OS" },
@@ -14,9 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-[var(--pc-stone)] bg-[var(--pc-cream)]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--pc-cream)]/60">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-semibold tracking-tight text-[var(--pc-navy)]">
-            Project Comfort
-          </Link>
+          <Logo showText={true} />
           <nav className="flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
