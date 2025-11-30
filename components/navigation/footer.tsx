@@ -36,6 +36,21 @@ export default function Footer() {
               </ul>
             </div>
             <div>
+              <h4 className="text-sm font-semibold mb-4 text-[var(--pc-navy)]">Support</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/support" className="text-[var(--pc-navy)]/70 hover:text-[var(--pc-navy)] transition-colors">
+                    Support
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="text-[var(--pc-navy)]/70 hover:text-[var(--pc-navy)] transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
               <h4 className="text-sm font-semibold mb-4 text-[var(--pc-navy)]">Connect</h4>
               <ul className="space-y-2 text-sm">
                 <li>
