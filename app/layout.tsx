@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: "Project Comfort — Design a Life That Feels Lighter",
   description:
     "Project Comfort helps you create calm, energy, and freedom across the core domains of your life — your home, systems, food, style, and movement.",
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
