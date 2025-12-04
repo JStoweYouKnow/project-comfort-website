@@ -6,6 +6,8 @@ export const BRAND = {
   description: "Project Comfort helps you create calm, energy, and freedom across the core domains of your life — your home, systems, food, style, and movement.",
 } as const;
 
+export const CONTACT_EMAIL = "projectcomfortdev@gmail.com" as const;
+
 export const PILLARS = [
   {
     name: "Real Estate",

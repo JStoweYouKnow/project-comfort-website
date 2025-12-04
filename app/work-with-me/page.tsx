@@ -1,6 +1,7 @@
 import Container from "@/components/shared/container";
 import SectionHeader from "@/components/shared/section-header";
 import Link from "next/link";
+import { CONTACT_EMAIL } from "@/lib/constants";
 
 export default function WorkWithMePage() {
   return (
@@ -56,7 +57,7 @@ export default function WorkWithMePage() {
                 Let's discuss how the Comfort Stack can work for you.
               </p>
               <Link
-                href="mailto:hello@projectcomfort.com"
+                href={`mailto:${CONTACT_EMAIL}`}
                 className="inline-flex items-center justify-center rounded-lg bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
               >
                 Get in Touch

@@ -1,5 +1,6 @@
 import Container from "@/components/shared/container";
 import { APPS } from "@/lib/apps";
+import { CONTACT_EMAIL } from "@/lib/constants";
 import Link from "next/link";
 
 interface PrivacyPageProps {
@@ -207,10 +208,10 @@ export default async function PrivacyPage({
                   <p className="text-[var(--pc-navy)]/70">
                     Email:{" "}
                     <Link
-                      href="mailto:privacy@projectcomfort.com"
+                      href={`mailto:${CONTACT_EMAIL}`}
                       className="text-[var(--pc-olive)] hover:text-[var(--pc-navy)] underline"
                     >
-                      privacy@projectcomfort.com
+                      {CONTACT_EMAIL}
                     </Link>
                   </p>
                   <p className="text-[var(--pc-navy)]/70 mt-2">

@@ -1,5 +1,6 @@
 import Container from "@/components/shared/container";
 import { APPS } from "@/lib/apps";
+import { CONTACT_EMAIL } from "@/lib/constants";
 import Link from "next/link";
 
 interface SupportPageProps {
@@ -46,10 +47,10 @@ export default async function SupportPage({
                       your account.
                     </p>
                     <Link
-                      href="mailto:support@projectcomfort.com"
+                      href={`mailto:${CONTACT_EMAIL}`}
                       className="inline-flex items-center text-[var(--pc-olive)] hover:text-[var(--pc-navy)] underline font-medium"
                     >
-                      support@projectcomfort.com →
+                      {CONTACT_EMAIL} →
                     </Link>
                   </div>
                   <div>
@@ -111,10 +112,10 @@ export default async function SupportPage({
                       Subscription management is available in your account settings
                       within the app. If you need assistance, email us at{" "}
                       <Link
-                        href="mailto:support@projectcomfort.com"
+                        href={`mailto:${CONTACT_EMAIL}`}
                         className="text-[var(--pc-olive)] hover:text-[var(--pc-navy)] underline"
                       >
-                        support@projectcomfort.com
+                        {CONTACT_EMAIL}
                       </Link>
                       .
                     </p>
@@ -128,10 +129,10 @@ export default async function SupportPage({
                       Absolutely! We love hearing from our users. Send feature requests
                       to{" "}
                       <Link
-                        href="mailto:support@projectcomfort.com"
+                        href={`mailto:${CONTACT_EMAIL}`}
                         className="text-[var(--pc-olive)] hover:text-[var(--pc-navy)] underline"
                       >
-                        support@projectcomfort.com
+                        {CONTACT_EMAIL}
                       </Link>{" "}
                       with "Feature Request" in the subject line.
                     </p>
